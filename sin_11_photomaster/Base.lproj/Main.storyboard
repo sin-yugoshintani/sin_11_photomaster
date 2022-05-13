@@ -33,16 +33,32 @@
                                     <action selector="onTappedAlbumButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="10e-Gz-Pgy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmh-yp-IYd">
-                                <rect key="frame" x="152" y="713" width="110" height="54"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWD-8G-GRa">
+                                <rect key="frame" x="20" y="744" width="110" height="67"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="テキスト合成"/>
+                                <connections>
+                                    <action selector="onTappedTextButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="JEV-Gc-FCR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cu-Gi-3ho">
+                                <rect key="frame" x="152" y="744" width="110" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="イラスト合成"/>
                                 <connections>
-                                    <action selector="onTappedIllustButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="6oH-5j-pPN"/>
+                                    <action selector="onTappedIllustButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="dFF-sk-jvM"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E35-ol-2cX">
+                                <rect key="frame" x="0.0" y="154" width="414" height="582"/>
+                                <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="468" id="c25-Ee-pyE"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LtU-ye-vk4">
-                                <rect key="frame" x="284" y="713" width="110" height="70"/>
+                                <rect key="frame" x="284" y="744" width="110" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="アップロード"/>
@@ -50,26 +66,10 @@
                                     <action selector="onTappeduploadButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="S3x-rc-LCo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWD-8G-GRa">
-                                <rect key="frame" x="20" y="700" width="110" height="67"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="テキスト合成"/>
-                                <connections>
-                                    <action selector="onTappedTextButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="JEV-Gc-FCR"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E35-ol-2cX">
-                                <rect key="frame" x="0.0" y="214" width="414" height="468"/>
-                                <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="468" id="c25-Ee-pyE"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
-                            <constraint firstItem="E35-ol-2cX" firstAttribute="centerX" secondItem="gmh-yp-IYd" secondAttribute="centerX" id="48L-nS-8qm"/>
                             <constraint firstItem="E35-ol-2cX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BiN-Lr-tfd"/>
                             <constraint firstItem="E35-ol-2cX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="169" id="WPr-vB-jJP"/>
                             <constraint firstItem="E35-ol-2cX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bSG-ks-MHk"/>
