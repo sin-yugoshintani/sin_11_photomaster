@@ -13,6 +13,7 @@
 		057F71DA282BFE4200A24197 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 057F71D8282BFE4200A24197 /* Main.storyboard */; };
 		057F71DC282BFE4500A24197 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 057F71DB282BFE4500A24197 /* Assets.xcassets */; };
 		057F71DF282BFE4500A24197 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 057F71DD282BFE4500A24197 /* LaunchScreen.storyboard */; };
+		05B5B2CC282E3EAB008A5EBA /* furo_ducky.png in Resources */ = {isa = PBXBuildFile; fileRef = 05B5B2CB282E3EAB008A5EBA /* furo_ducky.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		057F71DB282BFE4500A24197 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		057F71DE282BFE4500A24197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		057F71E0282BFE4500A24197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05B5B2CB282E3EAB008A5EBA /* furo_ducky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = furo_ducky.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				057F71DB282BFE4500A24197 /* Assets.xcassets */,
 				057F71DD282BFE4500A24197 /* LaunchScreen.storyboard */,
 				057F71E0282BFE4500A24197 /* Info.plist */,
+				05B5B2CB282E3EAB008A5EBA /* furo_ducky.png */,
 			);
 			path = sin_11_photomaster;
 			sourceTree = "<group>";
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05B5B2CC282E3EAB008A5EBA /* furo_ducky.png in Resources */,
 				057F71DF282BFE4500A24197 /* LaunchScreen.storyboard in Resources */,
 				057F71DC282BFE4500A24197 /* Assets.xcassets in Resources */,
 				057F71DA282BFE4200A24197 /* Main.storyboard in Resources */,

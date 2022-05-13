@@ -57,7 +57,7 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIImagePic
         UIGraphicsEndImageContext()
         return newImage!
     }
-    func drawMaskImage(image: UIImage) -> UIImage{
+    func drawMaskImage(image: UIImage) -> UIImage {
         let maskImage = UIImage(named: "furo_ducky")!
         UIGraphicsBeginImageContext(image.size)
         image.draw(in: CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height))
