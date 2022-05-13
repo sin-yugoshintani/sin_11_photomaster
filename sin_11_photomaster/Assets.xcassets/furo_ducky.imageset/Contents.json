@@ -1,11 +1,11 @@
 {
   "images" : [
     {
+      "filename" : "furo_ducky.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "furo_ducky.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

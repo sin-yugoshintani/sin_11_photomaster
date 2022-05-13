@@ -47,7 +47,6 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIImagePic
             NSAttributedString.Key.font: UIFont(name: "Arial", size: 120),
             NSAttributedString.Key.foregroundColor:UIColor.red
         ]
-        
         UIGraphicsBeginImageContext(image.size)
         image.draw(in: CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height))
         let margin: CGFloat = 5.0
@@ -57,12 +56,19 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIImagePic
         UIGraphicsEndImageContext()
         return newImage!
     }
-    func drawMaskImage(image: UIImage) -> UIImage {
-        let maskImage = UIImage(named: "furo_ducky")!
+    @IBAction func onTappedIllustButton(){
+        if photoImageView.image != nil {
+            photoImageView.image = drawMaskImage(image: photoImageView.image!)
+        }else {
+            print("画像がありません")
+        }
+    }
+    func drawMaskImage(image: UIImage)-> UIImage {
+        let maskImage = UIImage(named:"furo_ducky")!
         UIGraphicsBeginImageContext(image.size)
-        image.draw(in: CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height))
+    image.draw(in: CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height))
         let margin: CGFloat = 50.0
-        let maskRect = CGRect(x: image.size.width - maskImage.size.width - margin, y: image.size.height - maskImage.size.height - margin, width: maskImage.size.width, height: image.size.height)
+        let maskRect = CGRect(x: image.size.width - maskImage.size.width - margin, y: image.size.height - maskImage.size.height - margin, width: maskImage.size.width, height: maskImage.size.height)
         maskImage.draw(in: maskRect)
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
@@ -75,13 +81,7 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIImagePic
             print("画像がありません")
         }
     }
-    @IBAction func onTappedIllustButton(){
-        if photoImageView.image != nil {
-            photoImageView.image = drawMaskImage(image: photoImageView.image!)
-        }else {
-            print("画像がありません")
-        }
-    }
+    
     
     @IBAction func onTappeduploadButton(){
         if photoImageView.image != nil{

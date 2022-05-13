@@ -16,8 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCk-Xk-Ieh">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E35-ol-2cX">
+                                <rect key="frame" x="0.0" y="154" width="414" height="582"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCk-Xk-Ieh">
                                 <rect key="frame" x="48" y="84" width="110" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="カメラ"/>
                                 <connections>
@@ -33,8 +39,9 @@
                                     <action selector="onTappedAlbumButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="10e-Gz-Pgy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWD-8G-GRa">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWD-8G-GRa">
                                 <rect key="frame" x="20" y="744" width="110" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="テキスト合成"/>
                                 <connections>
@@ -50,13 +57,6 @@
                                     <action selector="onTappedIllustButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="QFt-pv-pmA"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E35-ol-2cX">
-                                <rect key="frame" x="0.0" y="154" width="414" height="582"/>
-                                <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="468" id="c25-Ee-pyE"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LtU-ye-vk4">
                                 <rect key="frame" x="284" y="744" width="110" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -69,16 +69,9 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                        <constraints>
-                            <constraint firstItem="E35-ol-2cX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BiN-Lr-tfd"/>
-                            <constraint firstItem="E35-ol-2cX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="169" id="WPr-vB-jJP"/>
-                            <constraint firstItem="E35-ol-2cX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bSG-ks-MHk"/>
-                            <constraint firstItem="E35-ol-2cX" firstAttribute="top" secondItem="mCk-Xk-Ieh" secondAttribute="bottom" constant="23" id="cim-Nw-enl"/>
-                            <constraint firstItem="MWD-8G-GRa" firstAttribute="top" secondItem="E35-ol-2cX" secondAttribute="bottom" constant="63" id="uAq-Oe-gLK"/>
-                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="photoImageView" destination="E35-ol-2cX" id="OfP-lW-xfS"/>
+                        <outlet property="photoImageView" destination="E35-ol-2cX" id="zIT-9L-BcW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
